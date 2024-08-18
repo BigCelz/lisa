@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.content{
+    width: 190px !important;
+    height: 254px !important;
+    background: hsl(0, 0%, 2%) ;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 6px;
+    height: 30%;
+    animation: animate 4s linear infinite;
+    transition: all 0.3s linear;
+}
+
+.text{
+    color: #fff;
+    font-family: "Dancing Script", cursive;
+    font-size: 25px;
+    z-index: 1;
+}
+
+
+@keyframes animate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
